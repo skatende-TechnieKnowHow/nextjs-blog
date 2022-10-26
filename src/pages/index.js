@@ -15,7 +15,7 @@ export async function getStaticProps() {
   };
 }
 
-// the blog posts will be passed to the Home component as a prop.
+// the blog posts will be parsed to the Home component as a prop.
 const Home = ({ allPostsData }) => {
   return (
     <Layout home>
@@ -23,7 +23,7 @@ const Home = ({ allPostsData }) => {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[My name is SK, and I am a software and web developer with
+        <p>[My name is SK, and I am a Web Developer with
            a degree in computer science. Currently I am looking for an 
            entry level Front-End Developer or Web Content Developer position.]</p>
         <p>
@@ -55,6 +55,3 @@ const Home = ({ allPostsData }) => {
 }
 
 export default Home
-
-
-
